@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ultra&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary-1: #e4dccf;
+  --color-primary-2: #deb35c;
+  --color-primary-3: #ffa98c;
+  --color-primary-4: #a94c2e;
+  --color-secondary-1: #153143;
+  --color-secondary-2: #a7d4bd;
+  --color-secondary-3: #253e2e;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* helper classes */
+
+.mt-6 {
+  margin-top: 8rem;
+}
+.mt-7 {
+  margin-top: 14rem;
+}
+
+.-mt-5 {
+  margin-top: -15rem;
+}
+
+.mb-7 {
+  margin-bottom: 4.5rem;
+}
+.pt-6 {
+  padding-top: 8rem;
+}
+.pt-7 {
+  padding-top: 14rem;
+}
+
+body {
+  font-family: "Lato", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Ultra", serif;
+}
+
+/* header section */
+
+.header {
+  background-color: var(--color-primary-1);
+  position: relative;
+  z-index: 1;
+  padding-bottom: 20rem;
+  overflow: hidden;
+}
+
+.burger-nav-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.burger-nav-btn span {
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: black;
+  position: relative;
+}
+.burger-nav-btn span::before,
+.burger-nav-btn span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.burger-nav-btn span::before {
+  top: -0.6rem;
+  left: 0;
+}
+.burger-nav-btn span::after {
+  top: 0.6rem;
+  left: 0;
+}
+.burger-arrow {
+  position: absolute;
+  bottom: -7rem;
+  left: -18rem;
+}
+
+.header__title {
+  font-size: 12rem;
+  color: var(--color-primary-4);
+}
+
+.header__subtitle {
+  font-size: 7rem;
+  color: var(--color-secondary-1);
+}
+
+.craft-cards-points {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.craft-cards-points span {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.card-title {
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--color-secondary-1);
+  text-wrap-mode: wrap;
+  line-height: 1.5;
+}
+
+.craft-cards__list li:not(:first-child) {
+  list-style-type: disc;
+}
+.craft-card-section {
+  max-width: 40rem;
+}
+.craft-card-section.craft-card-section-1 {
+  display: inline-block;
+  background-color: var(--color-primary-3);
+  transform: rotate(15deg);
+  z-index: 2;
+}
+.craft-card-section.craft-card-section-2 {
+  display: inline-block;
+  background-color: var(--color-primary-2);
+  transform: rotate(-15deg);
+}
+.craft-card-section.craft-card-section-3 {
+  display: inline-block;
+  background-color: var(--color-secondary-2);
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+.craft-card {
+  border: 2px solid white;
+  padding: 2rem 6rem;
+  height: 100%;
+}
+
+.absolute-images {
+  position: absolute;
+}
+
+.absolute-images.plant-1 {
+  width: 72rem;
+  bottom: -1%;
+  left: -14%;
+  z-index: -1;
+}
+
+.absolute-images.plant-2 {
+  bottom: 15%;
+  right: 0%;
+  z-index: -1;
+}
+.absolute-images.shade {
+  bottom: 5%;
+  right: 35%;
+}
+
+.hand {
+  max-width: 10rem;
+  margin: 0 auto;
+}
+
+/* carfted universe section */
+
+.crafter-universe {
+  background-color: var(--color-secondary-3);
+  position: relative;
+  padding: 4rem 0;
+}
+
+.grid-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.crafter-universe-left {
+  width: 30%;
+}
+.crafter-universe-right {
+  width: 70%;
+}
+
+.crafter-universe-left--description {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.crafter-universe-right--cta {
+  max-width: 60rem;
+  margin-left: auto;
+}
+
+.crafter-universe-right--image {
+  margin-left: 62rem;
+}
+.crafter-universe-right--title {
+  color: var(--color-primary-3);
+  font-size: 15rem;
+  margin-left: 12rem;
+}
+.crafter-universe-right--description {
+  color: var(--color-primary-3);
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.btn-primary {
+  color: var(--color-primary-4);
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 1.2rem 1.4rem;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.btn-primary span {
+  margin-left: 1rem;
+}
+
+.grid-background.eyes {
+  bottom: 15rem;
+  left: 25rem;
+}
+
+.pots {
+  position: relative;
+  overflow: hidden;
+  min-height: 130vh;
+}
+
+.pottery-images {
+  position: absolute;
+}
+
+.pottery-images.pottery-1 {
+  right: 0;
+  bottom: -1rem;
+}
+.pottery-images.pottery-2 {
+  left: 0;
+  top: 7rem;
+}
+.pottery-images.pottery-5 {
+  right: 9rem;
+  top: -10rem;
+}
+.pottery-images.pottery-3 {
+  right: 50rem;
+  top: 4.5rem;
+}
+.pottery-images.pottery-6 {
+  left: 30rem;
+  bottom: 1rem;
+}
+
+.pottery-images.pottery-4 {
+  left: 52rem;
+  bottom: 30rem;
+}
+
+/* collection section */
+
+.collection__box {
+  display: flex;
+}
+
+.collection__box--left {
+  flex: 1;
+  background-color: var(--color-primary-1);
+}
+.collection__box--left h2 {
+  font-size: 7rem;
+  color: var(--color-primary-4);
+}
+.collection__box--left p {
+  font-size: 1.4rem;
+  max-width: 40rem;
+}
+.collection__box--right {
+  background-color: var(--color-primary-4);
+  padding: 10rem;
+}
+
+.collection__box-img-container {
+  max-width: 30rem;
+  overflow: hidden;
+}
+
+.collection__box-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container.container-collection {
+  padding: 2rem 7rem;
+}
+
+.collection__shade {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+}
+
+/* marquee section */
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 13rem;
+  overflow: hidden;
+  color: var(--text-gray-900, #18181b);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Ultra;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+/* workshops section */
+
+.workshops {
+  background-color: var(--color-secondary-1);
+  padding-bottom: 40rem;
+}
+
+.workshop-image {
+  width: 30rem;
+}
+
+.boqua-img {
+  width: 40rem;
+  object-fit: contain;
+  margin-left: -8rem;
+  margin-right: -8rem;
+  z-index: 99;
+}
+
+.workshops__box--bottom-sub {
+  max-width: 37rem;
+  text-align: center;
+}
+
+.workshops__box--bottom-title {
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--color-secondary-2);
+}
+
+.workshops__box--bottom-description {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-primary-1);
+}
+
+.workshops__main-title {
+  margin-top: 6rem;
+  font-size: 15rem;
+  color: var(--color-primary-2);
+  text-align: center;
+  border-top: 2px solid var(--color-primary-2);
+  border-bottom: 2px solid var(--color-primary-2);
+}
+
+/* workshp slider */
+
+.workshops__slide {
+  max-width: 40rem;
+  position: relative;
+  margin: 0 5rem;
+  height: 40rem !important;
+}
+.workshops__slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hand-stamp-2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10%;
+}
+.workshops__slide h5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2.4rem;
+  font-weight: 800;
+  max-width: 14.5rem;
+  color: var(--color-secondary-2);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* community section */
+
+.community {
+  margin-top: -32rem;
+  height: 60rem;
+  background-image: url(/assets/linear-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.community__title {
+  font-size: 7rem;
+  font-weight: 400;
+  color: var(--color-secondary-2);
+  max-width: 75.6rem;
+  text-align: center;
+}
+
+.community__description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-primary-1);
+  max-width: 54rem;
+  text-align: center;
+}
+
+.community-img {
+  position: absolute;
+}
+
+.community-img.community-img-1 {
+  bottom: 0;
+  left: 0;
+}
+
+.community-img.community-img-2 {
+  bottom: -5rem;
+  right: 0;
+}

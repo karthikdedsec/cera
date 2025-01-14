@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- CSS -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- JS -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cera</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header min-vh-100">
+      <nav
+        class="container d-flex justify-content-between align-items-center py-3"
+      >
+        <a href="/"><img src="/assets/logo.png" alt="logo" /></a>
+
+        <button class="burger-nav-btn">
+          <span></span>
+          <img class="burger-arrow" src="/assets/arrow.png" alt="arrow" />
+        </button>
+      </nav>
+
+      <h1 class="header__title text-center mt-6">
+        Cera, Where creativity meets
+      </h1>
+      <h2 class="header__subtitle text-center">Craftsmanship</h2>
+
+      <div
+        class="container craft-cards d-flex gap-3 justify-content-center mt-7"
+      >
+        <div class="craft-card-section craft-card-section-1 p-4">
+          <div class="craft-card d-flex flex-column justify-content-between">
+            <h5 class="card-title text-uppercase">Candles</h5>
+            <p class="craft-cards-points">
+              Fragrance Selection <span></span> Wax melting and preperation
+              <span></span> Wick Placement
+            </p>
+            <img src="/assets/hand.png" alt="hand stamp" class="hand" />
+          </div>
+        </div>
+        <div class="craft-card-section craft-card-section-2 p-4">
+          <div class="craft-card d-flex flex-column justify-content-between">
+            <h5 class="card-title text-uppercase">Ceramics</h5>
+            <p class="craft-cards-points">
+              Ceramics Turning <span></span> Ceramic Modeling
+              <span></span> Painting <span></span> Porcelain Paint
+            </p>
+            <img src="/assets/hand.png" alt="hand stamp" class="hand" />
+          </div>
+        </div>
+        <div class="craft-card-section craft-card-section-3 p-4">
+          <div class="craft-card d-flex flex-column justify-content-between">
+            <h5 class="card-title text-uppercase">
+              Decorative<br />
+              Ceramics
+            </h5>
+            <p class="craft-cards-points">
+              Glazing or Underglazing <span></span> Painting and Detailing
+              <span></span> Kiln Firing <span></span> Multiple Firing
+            </p>
+            <img src="/assets/hand.png" alt="hand stamp" class="hand" />
+          </div>
+        </div>
+      </div>
+      <!-- absolute images -->
+      <img
+        class="absolute-images plant-1"
+        src="/assets/plant-shape.png"
+        alt="plant"
+      />
+      <img
+        class="absolute-images plant-2"
+        src="/assets/plant-shape-2.png"
+        alt="plant-2"
+      />
+      <img src="/assets/shade.png" alt="shade" class="absolute-images shade" />
+    </header>
+
+    <!-- crafted universe section -->
+    <section class="crafter-universe min-vh-100">
+      <div class="container">
+        <div class="d-flex">
+          <div class="crafter-universe-left">
+            <p class="crafter-universe-left--description">
+              Unleash your creativity through pottery - shape clay into
+              extraordinary works of art. Our nurturing studio welcomes both
+              beginners and seasoned potters, offering various techniques from
+              wheel throwing to hand sculpting.<br /><br />
+              Indulge in the captivating realm of scented candles. Let delicate
+              aromas transport you to serene realms, infusing warmth and
+              tranquility into your surroundings.
+            </p>
+          </div>
+          <div class="crafter-universe-right">
+            <img
+              src="/assets/cups.png"
+              alt="cups"
+              class="crafter-universe-right--image"
+            />
+            <h2 class="crafter-universe-right--title">Crafted Universe</h2>
+
+            <div class="crafter-universe-right--cta z-3">
+              <p class="crafter-universe-right--description">
+                Experience the Art of Pottery, Scented Candles, and Workshops
+                with our experts.
+              </p>
+              <a href="#" class="btn-primary position-relative z-2"
+                >Upcoming Workshops
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- absolute images -->
+      <img src="/assets/Grid.png" alt="grid" class="grid-background z-1" />
+      <img
+        src="/assets/ellipse.png "
+        alt="ellipse"
+        class="grid-background ellipse"
+      />
+      <img src="/assets/eyes.png" alt="eyes" class="grid-background eyes" />
+    </section>
+
+    <!-- pots section -->
+
+    <section class="pots container">
+      <!-- absolute images -->
+
+      <img
+        src="/assets/Group-1.png"
+        alt="pots"
+        class="pottery-images pottery-1"
+      />
+      <img
+        src="/assets/Group-2.png"
+        alt="pots"
+        class="pottery-images pottery-2"
+      />
+      <img
+        src="/assets/Img-2.png"
+        alt="pots"
+        class="pottery-images pottery-3"
+      />
+      <img
+        src="/assets/Img-3.png"
+        alt="pots"
+        class="pottery-images pottery-4"
+      />
+      <img
+        src="/assets/Img-4.png"
+        alt="pots"
+        class="pottery-images pottery-5"
+      />
+      <img
+        src="/assets/Img-6.png"
+        alt="pots"
+        class="pottery-images pottery-6"
+      />
+    </section>
+
+    <!-- collection section -->
+    <section class="collection mt-6">
+      <div class="collection__box">
+        <div
+          class="collection__box--left container container-collection d-flex flex-column justify-content-between"
+        >
+          <h2>Our collections of craft products and creative kits</h2>
+          <p>
+            To complement your lifestyle, we offer a selection of unique ceramic
+            accessories. From decorative vases to stylish home accents, our
+            handcrafted pieces add character and charm to any space.
+          </p>
+        </div>
+        <div class="collection__box--right position-relative">
+          <div class="collection__box-img-container">
+            <img src="/assets/Illus.png" alt="" class="collection__box-img" />
+          </div>
+          <img src="/assets/shade.png" alt="" class="collection__shade" />
+        </div>
+      </div>
+    </section>
+
+    <!-- marquee section -->
+    <section class="marquee">
+      <div class="marquee">
+        <div class="track">
+          <div class="content">
+            &nbsp;an Inspired
+            <span><img src="/assets/star.png" alt="" /></span> inspiring
+            community. an Inspired
+            <span><img src="/assets/star.png" alt="" /></span> inspiring
+            community. an Inspired<img src="/assets/star.png" alt="" />
+            inspiring community an Inspired
+            <span><img src="/assets/star.png" alt="" /></span> inspiring
+            community. an Inspired<img src="/assets/star.png" alt="" />
+            inspiring community an Inspired
+            <span><img src="/assets/star.png" alt="" /></span> inspiring
+            community. an Inspired<img src="/assets/star.png" alt="" />
+            inspiring community an Inspired
+            <span><img src="/assets/star.png" alt="" /></span> inspiring
+            community. an Inspired<img src="/assets/star.png" alt="" />
+            inspiring community
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- workshops section -->
+    <section class="workshops">
+      <div class="container pt-6">
+        <div class="workshops__box d-flex flex-column gap-5">
+          <div class="workshops__box--top d-flex justify-content-center">
+            <img
+              src="assets/Image-2.png"
+              alt="lighting candle"
+              class="workshop-image candle-img"
+            />
+
+            <img
+              src="assets/Plant-shape-comp.png"
+              alt="boqua"
+              class="workshop-image boqua-img"
+            />
+
+            <img
+              src="assets/Image-1.png"
+              alt="pottery"
+              class="workshop-image pottery-img"
+            />
+          </div>
+
+          <div
+            class="workshops__box--bottom d-flex align-items-center justify-content-between"
+          >
+            <div class="workshops__box--bottom-sub">
+              <h4 class="workshops__box--bottom-title">MANY KIND</h4>
+              <p class="workshops__box--bottom-description">
+                We regularly organize various workshops and training related to
+                crafts. Crafting masterpieces from clay and fragrance every
+                month.
+              </p>
+            </div>
+            <div class="workshops__box--bottom-sub">
+              <h4 class="workshops__box--bottom-title">EASY TO JOIN</h4>
+              <p class="workshops__box--bottom-description">
+                Register for the workshop through our website or by contacting
+                our team directly via <b>000-123-456</b> or
+                <b>cera.org@gmail.com</b>
+              </p>
+            </div>
+            <div class="workshops__box--bottom-sub">
+              <h4 class="workshops__box--bottom-title">CONNECTIONS</h4>
+              <p class="workshops__box--bottom-description">
+                Our workshops allow you to connect with fellow artists and
+                creative enthusiasts. Share ideas, inspiration, and experiences,
+                and build lasting connections with like-minded individuals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="workshops__main-title">.WORKSHOPS.</h2>
+      </div>
+      <!-- slider -->
+      <div class="workshops__slider mt-6">
+        <div class="workshops__slide">
+          <img
+            src="/assets/hand-craft-1.png"
+            alt=""
+            class="workshops__slide-img"
+          />
+          <img src="assets/hand-stanp-second.png" alt="" class="hand-stamp-2" />
+          <h5>CERAMICS WORKSHOP</h5>
+        </div>
+        <div class="workshops__slide">
+          <img
+            src="/assets/hand-craft-2.png"
+            alt=""
+            class="workshops__slide-img"
+          />
+          <img src="assets/hand-stanp-second.png" alt="" class="hand-stamp-2" />
+          <h5>CERAMICS WORKSHOP</h5>
+        </div>
+        <div class="workshops__slide">
+          <img
+            src="/assets/hand-craft-3.png"
+            alt=""
+            class="workshops__slide-img"
+          />
+          <img src="assets/hand-stanp-second.png" alt="" class="hand-stamp-2" />
+          <h5>CERAMICS WORKSHOP</h5>
+        </div>
+        <div class="workshops__slide">
+          <img
+            src="/assets/hand-craft-2.png"
+            alt=""
+            class="workshops__slide-img"
+          />
+          <img src="assets/hand-stanp-second.png" alt="" class="hand-stamp-2" />
+          <h5>CERAMICS WORKSHOP</h5>
+        </div>
+        <div class="workshops__slide">
+          <img
+            src="/assets/hand-craft-3.png"
+            alt=""
+            class="workshops__slide-img"
+          />
+          <img src="assets/hand-stanp-second.png" alt="" class="hand-stamp-2" />
+          <h5>CERAMICS WORKSHOP</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- community section -->
+    <section
+      class="community d-flex position-relative gap-3 flex-column justify-content-center align-items-center"
+    >
+      <h4 class="community__title">Craft workshop team building</h4>
+      <p class="community__description">
+        Ignite teamwork and creativity with CERA's craft workshops. Collaborate,
+        create, and bond as you craft personalized rugs and ceramics. Take home
+        mementos of shared moments and lasting teamwork. Unleash creativity
+        together at CERA.
+      </p>
+      <a href="#" class="btn-primary position-relative z-2"
+        >Join Our Community
+        <span><i class="fa-solid fa-arrow-right-long"></i></span
+      ></a>
+
+      <!-- absolute images -->
+      <img
+        src="/assets/Plant-shape-second.png"
+        alt="plant blue"
+        class="community-img community-img-1"
+      />
+      <img
+        src="/assets/Plant-shape-second-2.png"
+        alt="plant red"
+        class="community-img community-img-2"
+      />
+    </section>
+
+    <!-- newsletter section -->
+
+    
+
+    <script src="/script.js"></script>
+    <script src="/slider.js"></script>
+  </body>
+</html>
