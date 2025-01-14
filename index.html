@@ -42,7 +42,7 @@
       <nav
         class="container d-flex justify-content-between align-items-center py-3"
       >
-        <a href="/"><img src="/assets/logo.png" alt="logo" /></a>
+        <a href="/"><img src="/assets/logo.png" alt="logo" class="logo" /></a>
 
         <button class="burger-nav-btn">
           <span></span>
@@ -107,9 +107,9 @@
     </header>
 
     <!-- crafted universe section -->
-    <section class="crafter-universe min-vh-100">
+    <section class="crafter-universe min-vh-100 overflow-hidden">
       <div class="container">
-        <div class="d-flex">
+        <div class="d-flex crafter-universe-container">
           <div class="crafter-universe-left">
             <p class="crafter-universe-left--description">
               Unleash your creativity through pottery - shape clay into
@@ -388,7 +388,7 @@
             <button class="subscribe-btn">Subscribe</button>
           </form>
         </div>
-        <div class="d-flex flex-column gap-4">
+        <div class="d-flex flex-column gap-4 news-icons">
           <img src="/assets/CERA-y.png" alt="" class="newsletter-logos" />
           <img src="/assets/CERA-r.png" alt="" class="newsletter-logos" />
           <img src="/assets/CERA-g.png" alt="" class="newsletter-logos" />
@@ -399,9 +399,9 @@
     </section>
 
     <footer class="footer mt-5">
-      <div class="container d-flex justify-content-between">
+      <div class="container footer__container d-flex justify-content-between">
         <div class="footer__left-section">
-          <img src="/assets/logo.png" alt="logo" />
+          <img src="/assets/logo.png" alt="logo" class="logo" />
           <p class="footer__description">
             Where art, expression, and growth intertwine. Explore pottery,
             scented candles, and workshops. Join us to unleash your creativity
@@ -411,7 +411,9 @@
             >Copyright © 2023 - All rights reserved</span
           >
         </div>
-        <div class="d-flex flex-column align-items-end justify-content-between">
+        <div
+          class="d-flex footer__right-container flex-column align-items-end justify-content-between"
+        >
           <h4 class="footer__right-section--title">Find us on</h4>
           <div class="social-links">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
