@@ -166,7 +166,7 @@ h4 {
   transition: transform 0.5s ease-in-out;
 }
 .burger-nav-btn.active:before {
-  transform: scale(80);
+  transform: scale(480);
 }
 
 .burger-nav-btn span {
@@ -326,9 +326,21 @@ h4 {
   right: 35%;
 }
 
-.hand {
+.hand-container {
   max-width: 10rem;
   margin: 0 auto;
+  position: relative;
+}
+.hand-r {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: hand 3s linear infinite;
+}
+.hand-container .hand {
+  width: 100%;
+  animation: rotate 7s linear infinite;
 }
 
 /* carfted universe section */
@@ -1102,5 +1114,29 @@ input::placeholder {
 @media (max-width: 600px) {
   .content span img {
     width: 6rem;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hand {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-30%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
   }
 }
