@@ -285,12 +285,13 @@ h4 {
   display: inline-block;
   background-color: var(--color-primary-3);
   /* transform: rotate(15deg); */
-  z-index: 2;
+  z-index: 3;
 }
 .craft-card-section.craft-card-section-2 {
   display: inline-block;
   background-color: var(--color-primary-2);
   /* transform: rotate(-15deg); */
+  z-index: 2;
 }
 .craft-card-section.craft-card-section-3 {
   display: inline-block;
@@ -314,6 +315,7 @@ h4 {
   bottom: -1%;
   left: -14%;
   z-index: -1;
+  transform-origin: 0% 70%;
   animation: leave-1 7s linear infinite;
 }
 
@@ -322,6 +324,7 @@ h4 {
   bottom: 15%;
   right: 0%;
   z-index: -1;
+  transform-origin: 100% 50%;
   animation: leave-2 7s linear infinite;
 }
 .absolute-images.shade {
@@ -511,6 +514,9 @@ h4 {
 @media (max-width: 600px) {
   .btn-primary {
     font-size: 2.2rem;
+  }
+  .btn-primary.join-community {
+    margin-bottom: 0;
   }
 }
 .btn-primary span {
@@ -967,7 +973,11 @@ h4 {
 input::placeholder {
   color: #d4d4d8;
 }
-
+@media (max-width: 640px) {
+  .newsletter__title {
+    text-align: center;
+  }
+}
 .news-letter-container {
   position: relative;
   background-color: var(--color-primary-1);
@@ -1052,10 +1062,11 @@ input::placeholder {
   }
   .news-form input {
     width: 100%;
-    font-size: 3rem;
+    font-size: 4rem;
+    padding: 2rem 0;
   }
   .news-form .subscribe-btn {
-    font-size: 3.2rem;
+    font-size: 4.2rem;
   }
 }
 .news-form input:focus {
@@ -1151,6 +1162,11 @@ input::placeholder {
   color: var(--color-primary-2);
   font-size: 1.6rem;
   font-weight: 400;
+  transition: all 0.5s;
+}
+
+.moreabout-links a:hover {
+  color: var(--color-primary-4);
 }
 
 .content span img {

@@ -1,44 +1,27 @@
 $(".workshops__slider").slick({
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  autoplay: true,
+  centerMode: true,
   arrows: false,
-  draggable: true,
-  autoplaySpeed: 2000,
-  adaptiveHeight: false,
+  autoplay: true,
+  centerPadding: "60px",
+  slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 3,
       },
     },
     {
       breakpoint: 480,
       settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: "40px",
         slidesToShow: 1,
-        slidesToScroll: 1,
       },
     },
   ],
 });
-
-// Custom Next Button
-// $(".widget_next").click(function () {
-//   $(".instagram_widgets").slick("slickNext");
-// });
-
-// // Custom Previous Button
-// $(".widget_prev").click(function () {
-//   $(".instagram_widgets").slick("slickPrev");
-// });
