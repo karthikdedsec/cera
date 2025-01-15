@@ -844,13 +844,26 @@ h4 {
   object-fit: contain;
   transition: all 0.5s;
 }
-.hand-stamp-2 {
+.hand-stamp-2__container {
   width: 8rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: -10%;
 }
+.slider-hand {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: hand 3s linear infinite;
+}
+.hand-stamp-2 {
+  width: 100%;
+  animation: rotate 7s linear infinite;
+}
+
 .workshops__slide h5 {
   position: absolute;
   bottom: 0;
