@@ -291,6 +291,16 @@ h4 {
   font-weight: 300;
 }
 @media (max-width: 800px) {
+  .crafter-universe-container {
+    flex-direction: column;
+  }
+  .crafter-universe-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .crafter-universe-right {
+    width: 100%;
+  }
   .crafter-universe-left--description {
     font-size: 2.5rem;
   }
@@ -308,10 +318,22 @@ h4 {
     width: 100%;
   }
 }
+@media (min-width: 341px) and (max-width: 442px) {
+  .crafter-universe-left--description {
+    font-size: 2.2rem;
+  }
+}
 
 .crafter-universe-right--cta {
   max-width: 60rem;
   margin-left: auto;
+}
+@media (max-width: 800px) {
+  .crafter-universe-right--cta {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 @media (max-width: 504px) {
   .crafter-universe-right--cta {
@@ -329,6 +351,12 @@ h4 {
   color: var(--color-primary-3);
   font-size: 15rem;
   margin-left: 12rem;
+}
+@media (max-width: 800px) {
+  .crafter-universe-right--title {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 @media (max-width: 504px) {
   .crafter-universe-right--title {
@@ -356,6 +384,14 @@ h4 {
   padding: 1.2rem 1.4rem;
   display: inline-block;
   margin-top: 2rem;
+}
+.btn-primary.join-community {
+  margin-bottom: 10rem;
+}
+@media (max-width: 800px) {
+  .btn-primary {
+    font-size: 2.2rem;
+  }
 }
 @media (max-width: 600px) {
   .btn-primary {
@@ -648,6 +684,11 @@ h4 {
     font-size: 11rem;
   }
 }
+@media (max-width: 373px) {
+  .workshops__main-title {
+    font-size: 9rem;
+  }
+}
 
 /* workshp slider */
 
@@ -779,6 +820,7 @@ h4 {
   }
   .news-letter-container p {
     max-width: 100%;
+    font-size: 2.3rem;
   }
 }
 
@@ -810,15 +852,23 @@ h4 {
   padding: 0 2rem;
 }
 @media (max-width: 600px) {
+  .news-form {
+    flex-direction: column;
+  }
   .news-form input {
     width: 100%;
+    font-size: 3rem;
   }
   .news-form .subscribe-btn {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
 }
 .news-form input:focus {
   outline: none;
+}
+.newsletter__description {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 /* footer */
@@ -830,6 +880,7 @@ h4 {
   }
   .footer__right-container {
     align-items: start !important;
+    gap: 2rem;
   }
 }
 
@@ -870,6 +921,12 @@ h4 {
   font-family: "Lato", sans-serif;
   font-weight: 800;
   color: var(--color-primary-4);
+}
+
+@media (max-width: 800px) {
+  .footer__right-section--title {
+    font-size: 3.4rem;
+  }
 }
 
 .social-links {
