@@ -381,12 +381,7 @@ h4 {
 .pots {
   position: relative;
   overflow: hidden;
-  min-height: 130vh;
-}
-@media (max-width: 1081px) {
-  .pots {
-    min-height: 92vh;
-  }
+  height: 90rem;
 }
 @media (max-width: 796px) {
   .pots {
@@ -429,16 +424,81 @@ h4 {
   left: 52rem;
   bottom: 30rem;
 }
+@media (max-width: 578px) {
+  .pottery-images.pottery-3 {
+    right: 50rem;
+    top: 22.5rem;
+  }
+  .pottery-images.pottery-4 {
+    left: 46rem;
+    bottom: 30rem;
+  }
+  .pottery-images.pottery-6 {
+    left: 10rem;
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .pottery-images.pottery-3 {
+    max-width: 17.7rem;
+    right: 46rem;
+    top: 17.5rem;
+  }
+  .pottery-images.pottery-4 {
+    max-width: 15rem;
+    left: 42rem;
+    bottom: 30rem;
+  }
+  .pottery-images.pottery-6 {
+    max-width: 22.3rem;
+    left: 10rem;
+    bottom: 1rem;
+  }
+}
+@media (max-width: 419px) {
+  .pottery-images.pottery-3 {
+    right: 40rem;
+    top: 27.5rem;
+  }
+  .pottery-images.pottery-4 {
+    left: 32rem;
+    bottom: 30rem;
+  }
+  .pottery-images.pottery-6 {
+    left: 10rem;
+    bottom: 1rem;
+  }
+}
+@media (max-width: 340px) {
+  .pottery-images.pottery-3 {
+    max-width: 22.7rem;
+    right: 30rem;
+    top: 37.5rem;
+  }
+  .pottery-images.pottery-4 {
+    max-width: 19rem;
+    left: 22rem;
+    bottom: 40rem;
+  }
+  .pottery-images.pottery-6 {
+    max-width: 28.3rem;
+    left: 10rem;
+    bottom: 1rem;
+  }
+}
 
 /* collection section */
 
 .collection__box {
   display: flex;
+  justify-content: center;
 }
 
 .collection__box--left {
   flex: 1;
   background-color: var(--color-primary-1);
+  margin: 0;
 }
 .collection__box--left h2 {
   font-size: 7rem;
@@ -446,7 +506,7 @@ h4 {
 }
 .collection__box--left p {
   font-size: 1.4rem;
-  max-width: 40rem;
+  max-width: 43.2rem;
 }
 
 .collection__box--right {
