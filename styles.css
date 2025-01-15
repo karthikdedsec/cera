@@ -284,19 +284,19 @@ h4 {
 .craft-card-section.craft-card-section-1 {
   display: inline-block;
   background-color: var(--color-primary-3);
-  /* transform: rotate(15deg); */
+  transform: rotate(15deg);
   z-index: 3;
 }
 .craft-card-section.craft-card-section-2 {
   display: inline-block;
   background-color: var(--color-primary-2);
-  /* transform: rotate(-15deg); */
+  transform: rotate(-15deg);
   z-index: 2;
 }
 .craft-card-section.craft-card-section-3 {
   display: inline-block;
   background-color: var(--color-secondary-2);
-  /* transform: rotate(5deg); */
+  transform: rotate(5deg);
   z-index: 1;
 }
 
