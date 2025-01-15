@@ -233,6 +233,7 @@ h4 {
   position: absolute;
   bottom: -7rem;
   left: -18rem;
+  animation: arrow 3s linear infinite;
 }
 
 .header__title {
@@ -313,6 +314,7 @@ h4 {
   bottom: -1%;
   left: -14%;
   z-index: -1;
+  animation: leave-1 7s linear infinite;
 }
 
 .absolute-images.plant-2 {
@@ -320,6 +322,7 @@ h4 {
   bottom: 15%;
   right: 0%;
   z-index: -1;
+  animation: leave-2 7s linear infinite;
 }
 .absolute-images.shade {
   bottom: 5%;
@@ -1204,5 +1207,17 @@ input::placeholder {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
