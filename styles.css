@@ -157,6 +157,7 @@ h4 {
   }
 }
 .burger-arrow {
+  width: 16rem;
   position: absolute;
   bottom: -7rem;
   left: -18rem;
