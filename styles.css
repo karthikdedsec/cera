@@ -531,32 +531,56 @@ h4 {
   max-width: 50rem;
   right: 0;
   bottom: -1rem;
+  transition: all 0.4s;
+}
+.pottery-images.pottery-1:hover {
+  transform: scale(1.03);
 }
 .pottery-images.pottery-2 {
   max-width: 45.2rem;
   left: 0;
   top: 7rem;
+  transition: all 0.4s;
+}
+.pottery-images.pottery-2:hover {
+  transform: scale(1.03);
 }
 .pottery-images.pottery-5 {
   max-width: 37.6rem;
   right: 9rem;
   top: -10rem;
+  transition: all 0.4s;
+}
+.pottery-images.pottery-5:hover {
+  transform: scale(1.03);
 }
 .pottery-images.pottery-3 {
   max-width: 26.7rem;
   right: 50rem;
   top: 4.5rem;
+  transition: all 0.4s;
+}
+.pottery-images.pottery-3:hover {
+  transform: scale(1.03);
 }
 .pottery-images.pottery-6 {
   max-width: 32.3rem;
   left: 30rem;
   bottom: 1rem;
+  transition: all 0.4s;
+}
+.pottery-images.pottery-6:hover {
+  transform: scale(1.03);
 }
 
 .pottery-images.pottery-4 {
   max-width: 21rem;
   left: 52rem;
   bottom: 30rem;
+  transition: all 0.4s;
+}
+.pottery-images.pottery-4:hover {
+  transform: scale(1.03);
 }
 @media (max-width: 578px) {
   .pottery-images.pottery-3 {
@@ -795,11 +819,16 @@ h4 {
   position: relative;
   margin: 0 5rem;
   height: 40rem !important;
+  cursor: pointer;
+}
+.workshops__slide:hover .workshops__slide-img {
+  transform: scale(1.03);
 }
 .workshops__slide-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: all 0.5s;
 }
 .hand-stamp-2 {
   width: 8rem;
@@ -942,6 +971,12 @@ h4 {
   font-weight: 800;
   color: white;
   background-color: var(--color-primary-4);
+  transition: all 0.5s;
+}
+
+.subscribe-btn:hover {
+  color: var(--color-primary-4);
+  background-color: var(--color-primary-2);
 }
 .news-form input {
   width: 40rem;
@@ -1044,6 +1079,10 @@ h4 {
   color: white;
   font-size: 1.6rem;
   text-decoration: none;
+  transition: all 0.5s;
+}
+.social-links a:hover {
+  transform: translateY(-5px);
 }
 
 .moreabout-links a {
