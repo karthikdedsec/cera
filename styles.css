@@ -839,3 +839,9 @@ h4 {
 .content span img {
   width: 8rem;
 }
+
+@media (max-width: 600px) {
+  .content span img {
+    width: 6rem;
+  }
+}
