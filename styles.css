@@ -25,7 +25,7 @@ html {
 
 @media (max-width: 1402px) {
   html {
-    font-size: 42.5%;
+    font-size: 52.5%;
   }
 }
 
@@ -143,8 +143,8 @@ h4 {
 }
 
 .burger-nav-btn {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background-color: white;
   border: none;
@@ -171,12 +171,13 @@ h4 {
 
 .burger-nav-btn span {
   display: inline-block;
-  width: 50%;
+  width: 40%;
   height: 2px;
   background-color: black;
   position: relative;
   transition: all 0.5s;
   z-index: 10000;
+  border-radius: 100px;
 }
 
 .burger-nav-btn span::before,
@@ -187,6 +188,7 @@ h4 {
   height: 100%;
   background-color: black;
   transition: all 0.5s;
+  border-radius: 100px;
 }
 
 .burger-nav-btn span::before {
@@ -381,6 +383,8 @@ h4 {
   color: white;
   font-size: 1.6rem;
   font-weight: 300;
+  position: relative;
+  z-index: 3;
 }
 @media (max-width: 800px) {
   .crafter-universe-container {
@@ -435,9 +439,23 @@ h4 {
   }
 }
 
-.crafter-universe-right--image {
+.crafter-universe-right--image-container {
   width: 10rem;
   margin-left: 62rem;
+  position: relative;
+  z-index: 1;
+  transform: translateY(4rem);
+}
+.crafter-universe-right--image-1 {
+  width: 100%;
+  z-index: 1;
+}
+.crafter-universe-right--image-2 {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  width: 90%;
+  z-index: -1;
 }
 .crafter-universe-right--title {
   color: var(--color-primary-3);
@@ -999,10 +1017,6 @@ input::placeholder {
 }
 
 @media (max-width: 800px) {
-  .news-letter-container {
-    border-radius: 0;
-    margin-top: 0;
-  }
   .news-letter-container p {
     font-size: 2.2rem;
     border-radius: 0;
@@ -1013,6 +1027,12 @@ input::placeholder {
   .news-letter-container {
     flex-direction: column;
     gap: 2.5rem;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+  .news-letter-container.container {
+    max-width: 100%;
   }
   .news-letter-container h2 {
     max-width: 100%;
